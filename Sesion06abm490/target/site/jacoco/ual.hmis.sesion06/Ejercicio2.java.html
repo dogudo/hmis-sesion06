@@ -4,12 +4,12 @@
 	public boolean login (String username, String password){
 	    // comprobar que sean distintos de vacio
 	    // comprobar que la longitud sea &lt; 30
-	    // llamar al m�todo de la bbdd
+	    // llamar al método de la bbdd
 <span class="fc" id="L8">	    return compruebaLoginEnBD(username, password);</span>
 	}
 	   
 	public boolean compruebaLoginEnBD (String username, String password){
-	    // m�todo mock (simulado)
+	    // método mock (simulado)
 <span class="fc bfc" id="L13" title="All 4 branches covered.">	    if (username.equals(&quot;user&quot;) &amp;&amp; password.equals(&quot;pass&quot;))</span>
 <span class="fc" id="L14">	    	return true;  </span>
 	    else  
