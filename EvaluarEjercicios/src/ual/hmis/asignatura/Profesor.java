@@ -1,7 +1,6 @@
 package ual.hmis.asignatura;
 
 import java.util.ArrayList;
-import java.util.*;
 
 public class Profesor {
 
