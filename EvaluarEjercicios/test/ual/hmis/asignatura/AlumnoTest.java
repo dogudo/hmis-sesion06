@@ -38,7 +38,7 @@ class AlumnoTest {
 				"7, Notable",
 				"8, Notable",
 				"9, Sobresaliente",
-				"10, Matrícula",
+				"10, Matrï¿½cula",
 				"11, Error en la nota"})
 
 	void testCalificacion(double nota, String expected) {
@@ -47,21 +47,21 @@ class AlumnoTest {
 	}
 	
 	@ParameterizedTest (name = "{index} => Con entrada ({0}) sale {1}")
-	@CsvSource({"2018, Error en el año",
-				"2017, 1º Educación Infantil",
-				"2016, 2º Educación Infantil",
-				"2015, 3º Educación Infantil",
-				"2014, 1º Educación Primaria",
-				"2013, 2º Educación Primaria",
-				"2012, 3º Educación Primaria",
-				"2011, 4º Educación Primaria",
-				"2010, 5º Educación Primaria",
-				"2009, 6º Educación Primaria",
-				"2008, 1º Educación Secundaria",
-				"2007, 2º Educación Secundaria",
-				"2006, 3º Educación Secundaria",
-				"2005, 4º Educación Secundaria",
-				"2004, Error en el año"})
+	@CsvSource({"2018, Error en el aÃ±o",
+				"2017, 1Âº EducaciÃ³n Infantil",
+				"2016, 2Âº EducaciÃ³n Infantil",
+				"2015, 3Âº EducaciÃ³n Infantil",
+				"2014, 1Âº EducaciÃ³n Primaria",
+				"2013, 2Âº EducaciÃ³n Primaria",
+				"2012, 3Âº EducaciÃ³n Primaria",
+				"2011, 4Âº EducaciÃ³n Primaria",
+				"2010, 5Âº EducaciÃ³n Primaria",
+				"2009, 6Âº EducaciÃ³n Primaria",
+				"2008, 1Âº EducaciÃ³n Secundaria",
+				"2007, 2Âº EducaciÃ³n Secundaria",
+				"2006, 3Âº EducaciÃ³n Secundaria",
+				"2005, 4Âº EducaciÃ³n Secundaria",
+				"2004, Error en el aÃ±o"})
 
 	void testCursoSegunEdad(int anyoNacimiento, String expected) {
 		Alumno c = new Alumno();

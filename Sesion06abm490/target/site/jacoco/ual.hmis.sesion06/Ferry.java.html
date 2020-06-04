@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Ferry.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Sesion06abm490</a> &gt; <a href="index.source.html" class="el_package">ual.hmis.sesion06</a> &gt; <span class="el_source">Ferry.java</span></div><h1>Ferry.java</h1><pre class="source lang-java linenums">package ual.hmis.sesion06;
+
+import java.util.ArrayList;
+
+public class Ferry {
+	private int numPasajeros, numVehiculos, maxVehiculos, maxPesoVehiculos;
+	private double pesoTotal;
+	private ArrayList&lt;Vehiculo&gt; vehiculos;
+	
+<span class="fc" id="L10">	public Ferry(int maxVehiculos, int maxPesoVehiculos) {</span>
+<span class="fc" id="L11">		this.maxVehiculos = maxVehiculos;</span>
+<span class="fc" id="L12">		this.maxPesoVehiculos = maxPesoVehiculos;</span>
+	
+<span class="fc" id="L14">		numPasajeros = 0;</span>
+<span class="fc" id="L15">		numVehiculos = 0;</span>
+<span class="fc" id="L16">		pesoTotal = 0;</span>
+	
+<span class="fc" id="L18">		vehiculos = new ArrayList&lt;Vehiculo&gt;();</span>
+<span class="fc" id="L19">	}</span>
+	
+	public boolean embarcarVehiculo(Vehiculo v) {
+	// Embarca un veh�culo a�adi�ndolo a la lista
+<span class="fc bfc" id="L23" title="All 4 branches covered.">		if ((v == null) || (vehiculos.contains(v))) return false;</span>
+<span class="fc" id="L24">		vehiculos.add(v);</span>
+<span class="fc" id="L25">		numPasajeros += v.getNumPasajeros();</span>
+<span class="fc" id="L26">		numVehiculos++;</span>
+<span class="fc" id="L27">		pesoTotal += v.getPeso();</span>
+<span class="fc" id="L28">		return true;</span>
+		
+	}
+	public int totalVehiculos() {
+	// devuelve el n�mero total de veh�culos embarcados
+<span class="fc" id="L33">		return numVehiculos;</span>
+	}
+	
+	public boolean vacio() {
+	// verdadero si no hay ning�n veh�culo
+<span class="fc" id="L38">		return vehiculos.isEmpty();</span>
+	}
+	
+	public boolean superadoMaximoVehiculos() {
+	  // verdadero si el n�mero total de los veh�culos supera el m�ximo
+<span class="fc bfc" id="L43" title="All 2 branches covered.">		return numVehiculos &gt; maxVehiculos;</span>
+	}
+	
+	public boolean superadoMaximoPeso() {
+	  // verdadero si el peso total de los veh�culos supera el m�ximo
+<span class="fc bfc" id="L48" title="All 2 branches covered.">		return pesoTotal &gt; maxPesoVehiculos;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

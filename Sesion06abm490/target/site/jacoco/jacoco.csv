@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Sesion06abm490,ual.hmis.sesion06,Ferry,0,86,0,8,0,18,0,10,0,6
+Sesion06abm490,ual.hmis.sesion06,Ejercicio1,0,42,0,6,0,10,0,5,0,2
+Sesion06abm490,ual.hmis.sesion06,Ejercicio3,0,31,0,8,0,8,0,6,0,2
+Sesion06abm490,ual.hmis.sesion06,Vehiculo,0,18,0,0,0,7,0,3,0,3
+Sesion06abm490,ual.hmis.sesion06,Ejercicio2,0,20,0,4,0,5,0,5,0,3
+Sesion06abm490,ual.hmis.sesion06,Ejercicio4,0,33,0,4,0,5,0,4,0,2

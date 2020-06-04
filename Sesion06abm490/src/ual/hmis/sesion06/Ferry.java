@@ -19,7 +19,7 @@ public class Ferry {
 	}
 	
 	public boolean embarcarVehiculo(Vehiculo v) {
-	// Embarca un vehículo añadiéndolo a la lista
+	// Embarca un vehÃ­culo aÃ±adiÃ©ndolo a la lista
 		if ((v == null) || (vehiculos.contains(v))) return false;
 		vehiculos.add(v);
 		numPasajeros += v.getNumPasajeros();
@@ -29,22 +29,22 @@ public class Ferry {
 		
 	}
 	public int totalVehiculos() {
-	// devuelve el número total de vehículos embarcados
+	// devuelve el nÃºmero total de vehÃ­culos embarcados
 		return numVehiculos;
 	}
 	
 	public boolean vacio() {
-	// verdadero si no hay ningún vehículo
+	// verdadero si no hay ningÃºn vehÃ­culo
 		return vehiculos.isEmpty();
 	}
 	
 	public boolean superadoMaximoVehiculos() {
-	  // verdadero si el número total de los vehículos supera el máximo
+	  // verdadero si el nÃºmero total de los vehÃ­culos supera el mÃ¡ximo
 		return numVehiculos > maxVehiculos;
 	}
 	
 	public boolean superadoMaximoPeso() {
-	  // verdadero si el peso total de los vehículos supera el máximo
+	  // verdadero si el peso total de los vehÃ­culos supera el mÃ¡ximo
 		return pesoTotal > maxPesoVehiculos;
 	}
 }
